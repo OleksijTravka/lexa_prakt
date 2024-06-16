@@ -1,7 +1,7 @@
 a = 5
 b = 2
 
-c = false
+c = False
 
 if a > b:
     c = a > b
