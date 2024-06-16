@@ -7,3 +7,6 @@ if a > b:
     c = a > b
 
 print(c)
+
+input("")
+#Юзер впис
