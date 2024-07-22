@@ -1,9 +1,15 @@
-a = 5
-b = 2
+import math
 
-c = False
 
-if a > b:
-    c = a > b
 
-print(c)
+a  = input()
+b  = input()
+c  = input()
+a = int(a)
+b = int(b)
+c = int(c)
+
+p = pow(b, 2) - (a * c)
+s = b + math.sqrt(p) / ( 2 * a)
+
+print(s)
