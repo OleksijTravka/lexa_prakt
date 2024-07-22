@@ -10,15 +10,23 @@ def run_query(query):
         raise Exception("Query failed to run by returning code of {}. {}".format(response.status_code, query))
 
 
-new_query = """
-{
-    items(name: "") {
-        id
-        name
-        shortName
-    }
-}
-"""
+item = 'car'
 
-result = run_query(new_query)
-print(result)
+while item != 'stop':
+    item = input('')
+    new_query = """
+    {
+        items(name: """ + item + """) {
+            id
+            name
+            shortName
+        }
+    }
+    """
+    result = run_query(new_query)
+    data = result["data"]
+    print(result)
+    print(result["data"])
+    print(result["data"]["items"])
+    for tarkofitem in result["data"]["items"]:
+        print(tarkofitem["shortName"]+ "  " +tarkofitem ["name"])
