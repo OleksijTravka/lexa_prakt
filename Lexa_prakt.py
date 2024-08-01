@@ -1,4 +1,8 @@
 a = input()
 a = int(a)
-b = (a * 13) + (25 * 45) - 7
-print(b)
+n = a % 10
+b = round(a / 10)
+v = b - 40
+q = b - 38
+g = q + v + n
+print(g)
