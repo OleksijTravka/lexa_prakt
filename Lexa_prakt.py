@@ -1,12 +1,9 @@
-a = 5
-b = 2
+a = int(input("Введите номер"))
+if a < 10:
+    print('менше')
+elif a == 10:
+    print("Равно")
+else:
+    print("Больше")
 
-c = False
 
-if a > b:
-    c = a > b
-
-print(c)
-
-input("")
-#Пользователь
